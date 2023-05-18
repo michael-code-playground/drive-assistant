@@ -31,7 +31,7 @@ for file1 in file_list:
 
 #open the file defining where each template should be copied
 try:
-  with open('assignments1.csv', 'r', newline='') as assignments:
+  with open('assignments.csv', 'r', newline='') as assignments:
     reader = csv.reader(assignments, delimiter=';',quotechar='"')
     for row in reader:
       if row[0] == 'FILE_ID':
